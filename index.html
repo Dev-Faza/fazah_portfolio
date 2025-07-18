@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fazah Qamar - Personal Site</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #fffefc, #f7fff8);
+      overflow-x: hidden;
+      
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 20px;
+      background: #fffbe7;
+      border-bottom: 2px solid #eee;
+      animation: fadeIn 1.2s ease-in-out;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-img {
+      width: 200px;
+      border-radius: 50%;
+      margin: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      z-index: 1;
+    }
+
+    .hero-img:hover {
+      transform: scale(1.05);
+    }
+
+    .hero-text {
+      max-width: 500px;
+      margin: 20px;
+      color: #333;
+      z-index: 1;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      color: #ffa500;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      color: #444;
+      margin-top: 10px;
+    }
+
+    .skills-section {
+      padding: 60px 20px;
+      background: #fff8f8;
+      text-align: center;
+    }
+
+    .skills-section h2 {
+      font-size: 2rem;
+      color: #e91e63;
+      margin-bottom: 40px;
+    }
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .skill-box {
+      background: #ffe4ec;
+      width: 250px;
+      height: 260px; /* Slightly increased */
+      border-radius: 25px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      position: relative;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .skill-box:hover {
+      background: #fff176;
+      transform: scale(1.05);
+    }
+
+    .skill-box span {
+      font-size: 2.5rem;
+      transition: all 0.3s ease-in-out;
+      opacity: 0.9;
+    }
+
+    .skill-box h3 {
+      font-size: 1.3rem;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #444;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .skill-box p {
+      margin: 10px 20px 0;
+      font-size: 0.95rem;
+      color: #555;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    .skill-box:hover span {
+      transform: scale(1.2);
+    }
+
+    .skill-box:hover h3 {
+      transform: translateY(-3px);
+    }
+
+    .reply-note {
+      margin-top: 40px;
+      color: #555;
+      font-style: italic;
+    }
+
+    /* Floating Bubbles */
+    .float-shape {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.6;
+      animation: float 6s ease-in-out infinite;
+      z-index: 0;
+    }
+
+    .bubble1 {
+      width: 80px; height: 80px;
+      background: #e0b7c0;
+      top: 30px; right: 20px;
+      animation-delay: 0s;
+    }
+
+    .bubble2 {
+      width: 60px; height: 60px;
+      background: #b3dbfa;
+      top: 70px; left: 30px;
+      animation-delay: 1s;
+    }
+
+    .bubble3 {
+      width: 100px; height: 100px;
+      background: #c0f8b4;
+      top: 10px; right: 100px;
+      animation-delay: 2s;
+    }
+
+    .bubble4 {
+      width: 50px; height: 50px;
+      background: #ddb7f3;
+      top: 100px; left: 80px;
+      animation-delay: 3s;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-25px); }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .skill-box {
+        width: 90%;
+        height: 240px;
+      }
+
+      .skill-box p {
+        font-size: 0.9rem;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="float-shape bubble1"></div>
+    <div class="float-shape bubble2"></div>
+    <div class="float-shape bubble3"></div>
+    <div class="float-shape bubble4"></div>
+
+
+
+
+
+
+
+
+
+    <img src="1.png" alt="Fazah Qamar" class="hero-img">
+
+
+
+
+
+
+
+
+
+    <div class="hero-text">
+      <h1>Hey, I'm Fazah! 👋</h1>
+      <p>Hi! I’m a 16-year-old student exploring the world of Computer Science. I love building things with Python and HTML, designing fun websites, and learning about investing and digital tools. This is my little corner of the internet — welcome!</p>
+    </div>
+  </header>
+
+  <section class="skills-section">
+    <h2>✨ How Can 
+I Help You?</h2>
+    <div class="skills-container">
+      <div class="skill-box">
+        <span>💻</span>
+        <h3>Design Websites</h3>
+        <p>I make clean and creative websites.</p>
+      </div>
+      <div class="skill-box">
+        <span>📝</span>
+        <h3>Creative Projects</h3>
+        <p>I turn ideas into fun digital tools.</p>
+      </div>
+      <div class="skill-box">
+        <!-- ⚙️ -->
+        <span>👨‍💻 </span>
+        <h3>Python Projects
+        </h3>
+        <p>Get help with coding and logic building.</p>
+      </div>
+      <div class="skill-box">
+        <span>📈</span>
+        <h3>Investing Basics</h3>
+        <p>Learn how stocks work in simple steps.</p>
+      </div>
+      
+    
+
+
+  <!-- about section  -->
+
+  <section class="about-section">
+  <!-- Floating Pastel Bubbles -->
+  <div class="float-bubble about-bubble1"></div>
+  <div class="float-bubble about-bubble2"></div>
+  <div class="float-bubble about-bubble3"></div>
+  <div class="float-bubble about-bubble4"></div>
+  <div class="float-bubble about-bubble5"></div>
+  <div class="float-bubble about-bubble6"></div>
+
+  <!-- Floating Stars -->
+  <div class="float-star star1"></div>
+  <div class="float-star star2"></div>
+  <div class="float-star star3"></div>
+  <div class="float-star star4"></div>
+
+  <!-- Particle Sparkles (Tiny Dots) -->
+  <div class="particle dot1"></div>
+  <div class="particle dot2"></div>
+  <div class="particle dot3"></div>
+  <div class="particle dot4"></div>
+  <div class="particle dot5"></div>
+
+  <div class="about-content">
+    <div class="about-text">
+      <h2>About Me</h2>
+      
+
+      <p>Hi, I’m <b>Fazah Qamar</b> — a <b>16-year-old builder</b> with a deep drive to shape the future through <b>technology, investing, and creative thinking</b>.</p>
+
+<p>I began my journey at the <b>age of 15</b>, experimenting with code, design, and marketing — not for school, but because I was curious about how the world works and how I could build something meaningful in it.</p>
+
+<p>In just one year, I went from learning <b>Python, HTML, CSS, and C</b> to working on <b>real-world projects using AI tools</b> — transforming ideas into working solutions.</p>
+
+<p>Reading <b>Rich Dad Poor Dad</b> shifted my mindset. I realized I don’t just want to build cool products — I want to build <b>assets</b> that give me the freedom to keep creating, even if a startup fails.</p>
+
+<p>That’s why I’m combining my <b>technical skills, business mindset, and creativity</b> to build value that lasts. I know setbacks are part of the game — but with the right foundation, I’ll always rise again.</p>
+
+<p>If you’re an <b>entrepreneur, investor, teacher, or leader</b> who believes in long-term growth — <b>let’s connect and build something meaningful together</b>.</p>
+
+
+
+    </div>
+    <div class="about-img">
+      <img src="photo.png" alt="Fazah Qamar">
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-section {
+    /* background: linear-gradient(135deg, #f7ebdf, #f4d6e7); */
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .about-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 60px;
+    /* background: white; */
+    position: relative;
+    z-index: 1;
+    gap: 40px;
+  }
+
+  .about-text {
+    flex: 1;
+    min-width: 300px;
+    padding: 30px;
+  }
+
+  .about-text h2 {
+    font-size: 2.5rem;
+    color: #ff69b4;
+    margin-bottom: 25px;
+  }
+
+  .about-text p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+  }
+
+  .about-img {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .about-img img {
+    width: 480px;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .about-img img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Floating Bubbles */
+  .float-bubble {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: float 6s ease-in-out infinite;
+    z-index: 0;
+  }
+
+  .about-bubble1 { width: 80px; height: 80px; background: #c55c73; top: 50px; left: 40px; animation-delay: 0s; }
+  .about-bubble2 { width: 60px; height: 60px; background: #71abd7; top: 120px; right: 50px; animation-delay: 1s; }
+  .about-bubble3 { width: 100px; height: 100px; background: #a0ee90; bottom: 100px; left: 60px; animation-delay: 2s; }
+  .about-bubble4 { width: 50px; height: 50px; background: #d3a1f0; bottom: 60px; right: 70px; animation-delay: 3s; }
+  .about-bubble5 { width: 70px; height: 70px; background: #e2dba6; top: 200px; left: 100px; animation-delay: 4s; }
+  .about-bubble6 { width: 40px; height: 40px; background: #78c7ab; bottom: 30px; right: 30px; animation-delay: 5s; }
+
+  /* Glowing Stars */
+  .float-star {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(rgb(230, 248, 196), transparent);
+    border-radius: 50%;
+    box-shadow: 0 0 10px 5px rgb(232, 242, 214);
+    animation: star-float 8s ease-in-out infinite alternate;
+    z-index: 0;
+    opacity: 0.8;
+  }
+
+  .star1 { top: 10%; left: 20%; animation-delay: 0s; }
+  .star2 { top: 30%; left: 80%; animation-delay: 1.5s; }
+  .star3 { bottom: 20%; left: 10%; animation-delay: 3s; }
+  .star4 { bottom: 5%; right: 15%; animation-delay: 4s; }
+
+  /* Particle Dots */
+  .particle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #ffb6c1;
+    border-radius: 50%;
+    opacity: 0.7;
+    z-index: 0;
+    animation: sparkle 5s infinite ease-in-out alternate;
+  }
+
+  .dot1 { top: 40%; left: 30%; animation-delay: 0s; }
+  .dot2 { top: 70%; left: 85%; animation-delay: 1s; }
+  .dot3 { bottom: 10%; left: 15%; animation-delay: 2s; }
+  .dot4 { top: 15%; right: 20%; animation-delay: 3s; }
+  .dot5 { bottom: 20%; right: 30%; animation-delay: 4s; }
+
+  /* Animations */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes star-float {
+    0% { transform: translateY(0) rotate(0deg); opacity: 0.8; }
+    100% { transform: translateY(-20px) rotate(180deg); opacity: 1; }
+  }
+
+  @keyframes sparkle {
+    0% { transform: scale(1); opacity: 0.7; }
+    50% { transform: scale(1.5); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.7; }
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .about-text, .about-img {
+      padding: 20px;
+    }
+
+    .about-text h2 {
+      font-size: 1.8rem;
+    }
+
+    .about-text p {
+      font-size: 1rem;
+    }
+  }
+</style>
+
+
+<!-- footer  -->
+
+<!-- Contact Us Footer Section -->
+<footer class="contact-footer">
+  <!-- Bubbles + Stars -->
+  <div class="footer-bubble bubble-a"></div>
+  <div class="footer-bubble bubble-b"></div>
+  <div class="footer-bubble bubble-c"></div>
+  <div class="footer-star star-a"></div>
+  <div class="footer-star star-b"></div>
+
+  <div class="footer-content">
+    <h2>🤝 Let’s Connect Beyond the Apps</h2>
+    <p>If you want to chat, create something fun, or just say hi — I’d love to hear from you 💌</p>
+    
+    <div class="contact-buttons">
+      <a href="https://mail.google.com/mail/?view=cm&to=fazahqamarofficial@gmail.com" target="_blank" class="contact-btn">📧 Email Me</a>
+     <a href="https://www.instagram.com/realfazah/" class="contact-btn">📸 Instagram</a>
+      <a href="https://www.linkedin.com/in/fazah-qamar-677845374" class="contact-btn" target="_blank">💼 LinkedIn</a>
+      <a href="https://www.linkedin.com/" class="contact-btn">💼 Facebook</a>
+
+    </div>
+
+    <p class="footer-note">Made with 🌟, 💻, and ☕ by Fazah Qamar</p>
+  </div>
+</footer>
+
+<style>
+  .contact-footer {
+    position: relative;
+    
+    padding: 100px 20px 60px;
+    text-align: center;
+    overflow: hidden;
+    border-top: 2px solid #eee;
+    animation: slideInUp 1s ease-in-out;
+  }
+
+  .footer-content h2 {
+    font-size: 2.3rem;
+    color: #ff69b4;
+    margin-bottom: 20px;
+  }
+
+  .footer-content p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 25px;
+  }
+
+  .contact-buttons {
+    margin-bottom: 30px;
+  }
+
+  .contact-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    background: #fff;
+    color: #ff69b4;
+    border-radius: 25px;
+    border: 2px solid #ffb6c1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-btn:hover {
+    background: #ffecf2;
+    transform: scale(1.05);
+  }
+
+  .footer-note {
+    font-style: italic;
+    color: #777;
+    font-size: 0.95rem;
+    margin-top: 40px;
+  }
+
+  /* Glowing Bubbles */
+  .footer-bubble {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.4;
+    animation: float 8s ease-in-out infinite;
+    z-index: 0;
+  }
+
+  .bubble-a {
+    width: 80px; height: 80px;
+    background: #ffe4ec;
+    top: 30px; left: 20px;
+    animation-delay: 0s;
+  }
+
+  .bubble-b {
+    width: 100px; height: 100px;
+    background: #e0f7fa;
+    bottom: 50px; right: 40px;
+    animation-delay: 2s;
+  }
+
+  .bubble-c {
+    width: 60px; height: 60px;
+    background: #fceabb;
+    top: 90px; right: 60px;
+    animation-delay: 4s;
+  }
+
+  .footer-star {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: radial-gradient(#fffacd, transparent);
+    border-radius: 50%;
+    box-shadow: 0 0 8px 4px #faffd0;
+    animation: sparkle 6s infinite ease-in-out;
+    z-index: 0;
+  }
+
+  .star-a { top: 10%; right: 20%; animation-delay: 1s; }
+  .star-b { bottom: 15%; left: 25%; animation-delay: 3s; }
+
+  /* Animations */
+  @keyframes slideInUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  @keyframes sparkle {
+    0%, 100% { transform: scale(1); opacity: 0.7; }
+    50% { transform: scale(1.4); opacity: 1; }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footer-content h2 {
+      font-size: 1.8rem;
+    }
+
+    .footer-content p {
+      font-size: 1rem;
+    }
+
+    .contact-btn {
+      padding: 10px 20px;
+      font-size: 0.95rem;
+    }
+  }
+</style>
+
+
+
+<!-- messgae box  -->
+
+<style>
+  .hover-alert {
+    position: absolute;
+    background-color: #ff4d4d;
+    color: yellow;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    z-index: 9999;
+    display: none;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+  }
+
+  @media (max-width: 768px) {
+    .hover-alert {
+      font-size: 0.85rem;
+      padding: 10px 14px;
+    }
+  }
+</style>
+
+<div id="hoverMessage" class="hover-alert">
+  Due to app age limits, it's better to connect via email📧
+</div>
+
+<script>
+  const hoverMsg = document.getElementById("hoverMessage");
+
+  function showMsg(e) {
+    hoverMsg.style.left = (e.pageX + 15) + "px";
+    hoverMsg.style.top = (e.pageY + 15) + "px";
+    hoverMsg.style.display = "block";
+  }
+
+  function hideMsg() {
+    hoverMsg.style.display = "none";
+  }
+
+  function attachListeners(selector) {
+    const el = document.querySelector(selector);
+    if (!el) return;
+
+    el.addEventListener("mousemove", showMsg);
+    el.addEventListener("mouseleave", hideMsg);
+    el.addEventListener("touchstart", (e) => {
+      const touch = e.touches[0];
+      showMsg({ pageX: touch.pageX, pageY: touch.pageY });
+    });
+    el.addEventListener("touchend", hideMsg);
+  }
+
+  attachListeners('a[href*="instagram.com"]');
+  attachListeners('a[href*="linkedin.com"]');
+</script>
+
+</body>
+</html>
+
